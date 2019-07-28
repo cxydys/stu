@@ -18,6 +18,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void updateFill(MetaObject metaObject) {
+        System.out.println("修改代码成功");
         this.setFieldValByName("updateTime", new Date(), metaObject);
 
     }
